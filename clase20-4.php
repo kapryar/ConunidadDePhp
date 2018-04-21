@@ -4,17 +4,12 @@
 //Video del Webinar:
 class OperacionesAritmeticas
   {
-     public function estructura()
-     {
-       $valoruno = "Bol";
-       $valordos = "Arg";
-       $edad = 18;
-       $resultado = ($edad>=18) ? "SI entra" : "No entra";
-       return $resultado;
-     }
-     public function operaciones($datosR, $operacion="divide")
+     public function operaciones($datosR, $operacion="suma")
       {
        $resultado='';
+       $numElementos = count($datosR);
+       echo "Hay $numElementos de elementos.  <BR>";
+
        switch($operacion)
        {
          case "suma":
@@ -39,6 +34,6 @@ class OperacionesAritmeticas
 $datos = array(1,2,3,4,5,6,7);
 $objeto = new  OperacionesAritmeticas();
 //$objeto->arreglo();
-echo "valor es: ".$objeto->operaciones($datos,"raiz");  
+echo "El resultado es: ".$objeto->operaciones($datos,"suma");  
 
 
