@@ -39,6 +39,7 @@ class OperacionesAritmeticas
               $resultado = $resultado / $datosR[$i];
             }else{
               $resultado = ' La operacion divide no se permite dividir por 0';
+              break;
             }
           }
            break;
