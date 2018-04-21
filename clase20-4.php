@@ -13,7 +13,10 @@ class OperacionesAritmeticas
        switch($operacion)
        {
          case "suma":
-           $resultado = $datosR[0] + $datosR[1] + $datosR[2]+ $datosR[3]+$datosR[4];
+           //$resultado = $datosR[0] + $datosR[1] + $datosR[2]+ $datosR[3]+$datosR[4];
+           for ($i = 0; $i <$numElementos; $i++ ){
+              $resultado+=  $datosR[$i];
+           }
            break;
          case "resta":
            $resultado = $datosR[0] - $datosR[1] - $datosR[2] - $datosR[3];
