@@ -19,7 +19,9 @@ class OperacionesAritmeticas
            }
            break;
          case "resta":
-           $resultado = $datosR[0] - $datosR[1] - $datosR[2] - $datosR[3];
+         for ($i = 0; $i <$numElementos; $i++ ){
+          $resultado-=  $datosR[$i];
+       }
            break;
          case "multiplica":
             $resultado = $datosR[0] * $datosR[1] * $datosR[2] * $datosR[3];
@@ -37,6 +39,6 @@ class OperacionesAritmeticas
 $datos = array(1,2,3,4,5,6,7);
 $objeto = new  OperacionesAritmeticas();
 //$objeto->arreglo();
-echo "El resultado es: ".$objeto->operaciones($datos,"suma");  
+echo "El resultado es: ".$objeto->operaciones($datos,"resta");  
 
 
