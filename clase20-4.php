@@ -34,11 +34,11 @@ class OperacionesAritmeticas
          case "divide":
           // $resultado = $datosR[0] / $datosR[1] / $datosR[2] / $datosR[3];
           $resultado = $datosR[0];
-          for ($i = 0; $i <$numElementos; $i++){
+          for ($i = 0; $i <$numElementos; $i++ ){
             if($datosR[$i]<>0){
               $resultado = $resultado / $datosR[$i];
             }else{
-              $resultado = ' La operacion divide no se permite dividir por 0';
+              $resultado = ' La operacion divide no se permite dividir por 0.<BR>';
               break;
             }
           }
