@@ -8,7 +8,7 @@ class OperacionesAritmeticas
     }
 
     public function __destruct(){
-        echo "Adios Objeto.<br>";
+        echo "<br>Adios Objeto.<br>";
     }
 
     public function __call($nombreMetodo, $argumento)
@@ -28,8 +28,8 @@ class OperacionesAritmeticas
         echo "Estas intentao extraer la propiedad $nombrePropiedad de manera directa. Debes utiliza el metodo obtenerEdad<br>";
     }
 
-    public function __set($nombrePropiedad){
-        echo "Asignaste el valor a la propiedad $nombrePropiedad de manera directa. Debes utiliza el metodo obtenerEdad<br>";
+    public function __set($nombrePropiedad, $valor){
+        echo "Asignaste a la propiedad $nombrePropiedad el valor $valor<br>";
     }
 
      public function operaciones($datosR, $operacion="divide")
@@ -43,6 +43,6 @@ $objeto = new  OperacionesAritmeticas("1");
 //echo "Mucho codigo antes<br>";
 //$objeto->resta();
 
-$objeto->suma(1,2,3,4,5);
-
+//$objeto->suma(1,2,3,4,5);
+$objeto->edad=4;
 echo "La edad es ".$objeto->edad;
