@@ -2,9 +2,13 @@
 
 class OperacionesAritmeticas
   {
-     public function __construct()
+     public function __construct($valor)
     {
-        echo "Metodo magico constructor";
+        echo "Metodo magico constructor $valor <br>";
+    }
+
+    public function __destruct(){
+        echo "Adios Objeto.<br>";
     }
 
      public function operaciones($datosR, $operacion="divide")
@@ -12,6 +16,7 @@ class OperacionesAritmeticas
         
       }    
   }
-$objeto = new  OperacionesAritmeticas();
-$objeto2 = new  OperacionesAritmeticas();
-
+$objeto = new  OperacionesAritmeticas("1");
+$objeto2 = new  OperacionesAritmeticas("2");
+$objeto2 = null;
+ echo "Mucho codigo antes<br>";
