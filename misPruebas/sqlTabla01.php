@@ -89,7 +89,7 @@ $consulta = "SELECT id, nombre FROM mi_tabla;";
 	</head>
 	<body>
 	<h2>
-		Listado de nombres.
+		&#9787;Listado de nombres.
 	</h2>
 	<table class="sombra">
 
